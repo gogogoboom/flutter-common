@@ -15,7 +15,7 @@ dependencies:
 #      url: git@github.com:gogogoboom/flutter_core.git
 #      ref: main
   gogoboom_flutter_core:
-    path: ../flutter-core
+    path: ../gogoboom_flutter_core
   #图片缓存
   cached_network_image: ^3.2.0
   #图片选择器
