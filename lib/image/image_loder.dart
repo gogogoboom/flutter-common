@@ -1,15 +1,15 @@
 import 'dart:io';
 
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gogoboom_flutter_common/utils/asset_file.dart';
+
+import '../gogoboom_flutter_common.dart';
 
 Widget fetchImage(String url,
     {double width = 48,
     double height = 48,
     Color? color,
-    String defaultImagePath = 'icon_bg_video'}) {
+    String? defaultImagePath}) {
   return CachedNetworkImage(
     height: height,
     width: width,
@@ -17,14 +17,14 @@ Widget fetchImage(String url,
     color: color,
     fit: BoxFit.cover,
     placeholder: (BuildContext context, String url) => Image.asset(
-      Utils.getImgPath(defaultImagePath),
+      Utils.getImgPath(defaultImagePath ?? commonConfig.defaultImgRes),
       width: width,
       height: height,
       fit: BoxFit.cover,
     ),
     errorWidget: (BuildContext context, String url, dynamic error) =>
         Image.asset(
-      Utils.getImgPath(defaultImagePath),
+      Utils.getImgPath(defaultImagePath ?? commonConfig.defaultImgRes),
       width: width,
       height: height,
       fit: BoxFit.cover,
@@ -32,28 +32,29 @@ Widget fetchImage(String url,
   );
 }
 
-Widget fetchAvatar(String? url,
-    {double size = 60, String defaultImagePath = 'icon_avatar_default'}) {
+Widget fetchAvatar(String? url, {double size = 60, String? defaultImagePath}) {
   return url == null
-      ? Image.asset(Utils.getImgPath(defaultImagePath))
+      ? Image.asset(
+          Utils.getImgPath(defaultImagePath ?? commonConfig.defaultAvatarRes))
       : CachedNetworkImage(
           height: size,
           width: size,
           imageUrl: url,
           fit: BoxFit.cover,
           placeholder: (BuildContext context, String url) => Image.asset(
-            Utils.getImgPath(defaultImagePath),
+            Utils.getImgPath(defaultImagePath ?? commonConfig.defaultAvatarRes),
             color: Colors.white,
           ),
           errorWidget: (BuildContext context, String url, dynamic error) =>
-              Image.asset(Utils.getImgPath(defaultImagePath)),
+              Image.asset(Utils.getImgPath(
+                  defaultImagePath ?? commonConfig.defaultAvatarRes)),
         );
 }
 
 Widget fetchLocalImage(File? file, {double width = 48, double height = 48}) {
   return file == null
       ? Image.asset(
-          Utils.getImgPath('icon_bg_video'),
+          Utils.getImgPath(commonConfig.defaultLocalImgRes),
           width: width,
           height: height,
           fit: BoxFit.cover,
