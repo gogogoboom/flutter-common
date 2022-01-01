@@ -27,6 +27,8 @@ export 'wrapper/keep_alive_wrapper.dart';
 export 'exception/exception_handler.dart';
 export 'package:flutter_image_compress/flutter_image_compress.dart';
 export 'package:video_compress/video_compress.dart';
+export 'package:qr_flutter/qr_flutter.dart';
+export 'package:qr_code_scanner/qr_code_scanner.dart';
 
 export 'package:gogoboom_flutter_core/gogoboom_flutter_core.dart';
 

@@ -97,6 +97,10 @@ dependencies:
   flutter_image_compress: ^1.1.0
   #视频压缩
   video_compress: ^3.1.0
+  #二维码
+  qr_flutter: ^4.0.0
+  #二维码扫描
+  qr_code_scanner: ^0.6.1
   #代码规范检测
   #  lint: ^1.8.1
   # The following adds the Cupertino Icons font to your application.
