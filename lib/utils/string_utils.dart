@@ -1,5 +1,5 @@
 
-import '../gogoboom_flutter_common.dart';
+import 'package:gogoboom_flutter_common/gogoboom_flutter_common.dart';
 
 class StringUtils {
   ///将list转化为上传的字符串

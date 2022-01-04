@@ -1,9 +1,6 @@
 import 'dart:io';
 
 import 'package:gogoboom_flutter_common/gogoboom_flutter_common.dart';
-import 'package:path_provider/path_provider.dart';
-
-import 'toast.dart';
 
 class CacheUtil {
   ///加载缓存

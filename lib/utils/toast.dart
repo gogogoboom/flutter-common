@@ -1,9 +1,6 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-
-import 'asset_file.dart';
 
 class ToastUtil {
   static void show(String? msg, {IconData? iconData}) {
@@ -24,18 +21,11 @@ class ToastUtil {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    if (iconData == null)
-                      SvgPicture.asset(
-                        Utils.getSvgPath('icon_success'),
-                        color: Colors.white,
-                        width: 40,
-                      )
-                    else
-                      Icon(
-                        iconData,
-                        color: Colors.white,
-                        size: 40,
-                      ),
+                    Icon(
+                      iconData ?? CupertinoIcons.info,
+                      color: Colors.white,
+                      size: 40,
+                    ),
                     const SizedBox(
                       height: 12,
                     ),
@@ -63,10 +53,13 @@ class ToastUtil {
     }
   }
 
-  static void success(String msg) => show(msg);
+  static void success(String msg) =>
+      show(msg, iconData: CupertinoIcons.checkmark_circle);
 
   static void error(String msg) =>
       show(msg, iconData: CupertinoIcons.clear_circled);
+
+  static void info(String msg) => show(msg, iconData: CupertinoIcons.info);
 }
 
 CancelFunc toastLoading() => BotToast.showCustomLoading(

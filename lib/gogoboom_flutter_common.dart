@@ -29,10 +29,11 @@ export 'package:flutter_image_compress/flutter_image_compress.dart';
 export 'package:video_compress/video_compress.dart';
 export 'package:qr_flutter/qr_flutter.dart';
 export 'package:qr_code_scanner/qr_code_scanner.dart';
-export 'package:json_serializable/json_serializable.dart';
+// export 'package:json_serializable/json_serializable.dart';
 export 'package:badges/badges.dart';
 export 'package:path_provider/path_provider.dart';
 export 'package:image_gallery_saver/image_gallery_saver.dart';
+export 'package:device_info_plus/device_info_plus.dart';
 export 'package:wechat_assets_picker/wechat_assets_picker.dart' hide IndicatorBuilder;
 export 'package:wechat_camera_picker/wechat_camera_picker.dart' hide CameraException;
 

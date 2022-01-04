@@ -1,9 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:gogoboom_flutter_common/utils/asset_file.dart';
-
-import '../gogoboom_flutter_common.dart';
+import 'package:gogoboom_flutter_common/gogoboom_flutter_common.dart';
 
 Widget fetchImage(String url,
     {double width = 48,

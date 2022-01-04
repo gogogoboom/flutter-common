@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gogoboom_flutter_common/gogoboom_flutter_common.dart';
 
-import '../gogoboom_flutter_common.dart';
 
 class ExceptionHandler {
   static void handleException(FlutterErrorDetails details) {
@@ -18,7 +18,8 @@ class ExceptionHandler {
         return;
       }
       ToastUtil.error('${exception.error}');
+    } else {
+      ToastUtil.error('$exception');
     }
-    logger.e(errorMsg);
   }
 }
