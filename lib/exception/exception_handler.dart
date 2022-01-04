@@ -19,7 +19,7 @@ class ExceptionHandler {
       }
       ToastUtil.error('${exception.error}');
     } else {
-      ToastUtil.error('$exception');
+      // ToastUtil.error('$exception');
     }
   }
 }
