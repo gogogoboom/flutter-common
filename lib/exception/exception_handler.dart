@@ -17,7 +17,7 @@ class ExceptionHandler {
         ToastUtil.error('${exception.error.statusMessage}');
         return;
       }
-      ToastUtil.error('${exception.error}');
+      ToastUtil.error('${exception}');
     } else {
       // ToastUtil.error('$exception');
     }

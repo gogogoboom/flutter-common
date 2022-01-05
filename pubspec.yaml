@@ -14,6 +14,10 @@ dependencies:
 #    git:
 #      url: git@github.com:gogogoboom/flutter-core.git
 #      ref: main
+  flutter_beautiful_popup:
+    git:
+      url: git@github.com:gogogoboom/Flutter_beautiful_popup.git
+      ref: master
   gogoboom_flutter_core:
     path: ../flutter-core
   #图片缓存
@@ -108,6 +112,8 @@ dependencies:
   wechat_camera_picker: ^2.6.3
   #文字动画
   animated_text_kit: ^4.2.1
+  #app内安装更新
+  app_installer: ^1.1.0
   #代码规范检测
   #  lint: ^1.8.1
   # The following adds the Cupertino Icons font to your application.

@@ -36,6 +36,11 @@ export 'package:image_gallery_saver/image_gallery_saver.dart';
 export 'package:device_info_plus/device_info_plus.dart';
 export 'package:wechat_assets_picker/wechat_assets_picker.dart' hide IndicatorBuilder;
 export 'package:wechat_camera_picker/wechat_camera_picker.dart' hide CameraException;
+export 'package:app_installer/app_installer.dart';
+export 'package:package_info_plus/package_info_plus.dart';
+export 'package:device_info_plus/device_info_plus.dart';
+export 'package:flutter_beautiful_popup/main.dart';
+export 'package:animate_do/animate_do.dart';
 
 export 'package:gogoboom_flutter_core/gogoboom_flutter_core.dart';
 
