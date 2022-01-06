@@ -9,7 +9,7 @@ class ExceptionHandler {
       'stackTrace': details.stack.toString(),
     };
     final Object exception = details.exception;
-    logger.e(exception);
+    logger.e(errorMsg);
     if (exception is BaseError) {
       ToastUtil.error(exception.message!);
     } else if (exception is DioError) {
@@ -19,7 +19,7 @@ class ExceptionHandler {
       }
       ToastUtil.error('${exception}');
     } else {
-      // ToastUtil.error('$exception');
+      ToastUtil.error('$exception');
     }
   }
 }
