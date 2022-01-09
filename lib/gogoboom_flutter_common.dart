@@ -23,6 +23,7 @@ export 'utils/toast.dart';
 export 'utils/asset_file.dart';
 export 'utils/system_util.dart';
 export 'utils/string_utils.dart';
+export 'utils/cache_util.dart';
 export 'wrapper/keep_alive_wrapper.dart';
 export 'exception/exception_handler.dart';
 export 'package:flutter_image_compress/flutter_image_compress.dart';
