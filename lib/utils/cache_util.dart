@@ -79,7 +79,7 @@ class CacheUtil {
       var _tempDir = await getTemporaryDirectory();
       double value = 0;
       bool exists = await _tempDir.exists();
-      if (_tempDir != null && exists) {
+      if (exists) {
         value = await _getTotalSizeOfFilesInDir(_tempDir);
       }
       if (value <= 0) {

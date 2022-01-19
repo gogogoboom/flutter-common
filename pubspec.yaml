@@ -1,7 +1,7 @@
 name: gogoboom_flutter_common
 description: A new Flutter project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/gogogoboom/flutter-common
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -10,22 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-#  gogoboom_flutter_core:
-#    git:
-#      url: git@github.com:gogogoboom/flutter-core.git
-#      ref: main
-  flutter_beautiful_popup:
-    git:
-      url: git@github.com:gogogoboom/Flutter_beautiful_popup.git
-      ref: master
-  gogoboom_flutter_core:
-    path: ../flutter-core
+  gogoboom_flutter_core: ^0.0.1
   #图片缓存
   cached_network_image: ^3.2.0
-  #图片选择器
-  image_picker: ^0.8.4+4
-  #文件选择器
-  file_picker: ^4.3.0
   #打开带有字符串的文件
   open_file: ^3.2.1
   # Media类型处理
@@ -42,26 +29,18 @@ dependencies:
   badges: ^2.0.2
   #用于启动URL
   url_launcher: ^6.0.17
-  #城市列表、联系人列表，索引&悬停。基于scrollable_positioned_list
-  azlistview: ^2.0.0-nullsafety.0
   # 汉字转拼音
   lpinyin: ^2.0.3
   #屏幕适配
   flutter_screenutil: ^5.0.1+2
   #下拉刷新
   pull_to_refresh: ^2.0.0
-  #不损失精度的情况下对十进制数进行计算
-  decimal: ^2.0.1
   #监听键盘弹出
   flutter_keyboard_visibility: ^5.1.0
-  #谷歌字体
-  google_fonts: ^2.1.0
   #底部导航按钮
   persistent_bottom_nav_bar: ^4.0.2
   #底部弹窗
   modal_bottom_sheet: ^2.0.0
-  #app内更新
-  upgrader: ^3.11.1
   #文件系统访问
   path_provider: ^2.0.8
   #应用程序包信息的API
@@ -96,8 +75,6 @@ dependencies:
   flutter_slidable: ^1.1.0
   #internationalization
   intl: ^0.17.0
-  #不推荐使用
-  event_bus: ^2.0.0
   #图片压缩
   flutter_image_compress: ^1.1.0
   #视频压缩

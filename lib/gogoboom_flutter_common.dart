@@ -1,14 +1,11 @@
 
 library gogoboom_flutter_common;
 
-import 'package:flutter/services.dart';
 import 'package:gogoboom_flutter_common/common_config.dart';
 import 'package:logger/logger.dart';
 import 'package:uuid/uuid.dart';
 
 export 'package:cached_network_image/cached_network_image.dart';
-export 'package:image_picker/image_picker.dart';
-export 'package:file_picker/file_picker.dart';
 export 'package:open_file/open_file.dart';
 export 'package:mime/mime.dart';
 export 'package:flutter_svg/flutter_svg.dart';
@@ -40,7 +37,6 @@ export 'package:wechat_camera_picker/wechat_camera_picker.dart' hide CameraExcep
 export 'package:app_installer/app_installer.dart';
 export 'package:package_info_plus/package_info_plus.dart';
 export 'package:device_info_plus/device_info_plus.dart';
-export 'package:flutter_beautiful_popup/main.dart';
 export 'package:animate_do/animate_do.dart';
 
 export 'package:gogoboom_flutter_core/gogoboom_flutter_core.dart';
